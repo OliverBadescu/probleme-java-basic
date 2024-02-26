@@ -62,6 +62,57 @@ public class Probleme {
 
     }
 
+    public String stergereLitera(String cuvant){
+
+        StringBuilder rezultat = new StringBuilder();
+
+
+        int ct = 0;
+
+        for (int i =0 ; i< cuvant.length(); i++){
+
+            char litera = cuvant.charAt(i);
+
+            if (litera!= cuvant.charAt(0)){
+                rezultat.append(litera);
+            }
+
+        }
+
+        return rezultat.toString();
+
+    }
+
+    public void afisareFaraPrimUltim(String cuvant){
+
+        int ct =0;
+        for (int i =0, j = cuvant.length(); i < j; i++, j--){
+
+            while ( ct < j){
+                System.out.println(cuvant.charAt(ct));
+                ct++;
+
+            }
+
+        }
+
+    }
+
+    public String afisareCelMaiLungSirDinMatrice(String[][] matrice, int n, int m){
+
+        StringBuilder max = new StringBuilder();
+        max.append(matrice[0][0]);
+
+        for (int i =0 ;i< n; i++){
+            for (int j = 0; j < m;j++){
+                if (matrice[i][j].length() > max.length()){
+                    max.append(matrice[i][j]);
+                }
+            }
+
+        }
+        return max.toString();
+    }
 
 
 
