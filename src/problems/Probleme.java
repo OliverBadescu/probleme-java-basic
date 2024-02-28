@@ -114,6 +114,69 @@ public class Probleme {
         return max.toString();
     }
 
+    public void modificareCuvant(String cuvant){
+
+        for (int i =0; i< cuvant.length(); i++){
+            if (Character.isLowerCase(cuvant.charAt(i))){
+                Character.toUpperCase(cuvant.charAt(i));
+            }else{
+                Character.toLowerCase(cuvant.charAt(i));
+            }
+        }
+
+    }
+
+    public void sortareDescrescatoare(String []sir){
+
+        boolean sortat = false;
+
+        do{
+            sortat = true;
+
+            for (int i = 0; i < sir.length - 1; i++) {
+
+                if (sir[i].length() < sir[i+1].length()) {
+                    String aux = sir[i];
+                    sir[i] = sir[i+1];
+                    sir[i+1] = aux;
+
+                    sortat = false;
+                }
+
+            }
+
+        } while (!sortat);
+        }
+
+    public void afisareLiniiNoi(String text){
+
+        String punct = "[.]";
+
+        String[]propozitii = text.split(punct);
+
+        for (int i =0; i< propozitii.length; i++){
+            System.out.println(propozitii[i].trim());
+
+        }
+
+    }
+
+    public boolean isRimeaza(String cuv1, String cuv2){
+
+        boolean ok = false;
+
+        if (cuv1.charAt(cuv1.length()-2) == cuv2.charAt(cuv2.length()-2) && cuv1.charAt(cuv1.length()-1) == cuv2.charAt(cuv2.length()-1)) {
+            ok = true;
+        }
+
+        return ok;
+
+    }
+
+
+
 
 
 }
+
+

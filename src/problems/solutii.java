@@ -1,5 +1,7 @@
 package problems;
 
+import java.util.Arrays;
+
 public class solutii {
 
     Probleme probleme = new Probleme();
@@ -47,13 +49,77 @@ public class solutii {
     }
 
 
+    // 5) todo: Sa se creeze un program care transforma literele mici ale unui cuvant in litere mari si literele mari in litere mici ?
+
+    public void sol4(){
+
+        String cuvant = "MioritIC";
+        probleme.modificareCuvant(cuvant);
+
+        System.out.println("Sirul modificat este: " +cuvant);
 
 
 
+    }
+
+
+    // 6) todo: Sa se determine cuvantul de lungime maxima care se poate forma prin concatenarea a doua dintre cuvintlele citite
+    public void sol5(){
+
+        String[] sir = {"mama", "are", "conduce", "paine", "vine"};
+
+        probleme.sortareDescrescatoare(sir);
+
+        System.out.println("Cuvantul de lungime maxima este: ");
+        System.out.println(sir[0] + sir[1]);
+    }
+
+
+    // 7) todo: Sa se determine cuvantul cel mai mic in ordine lexicografica obtinu prin concatenarea a doua dintre cuvintele citite ???
+
+    public void sol6(){
 
 
 
+    }
 
+
+    // 8) todo: Realizati un program care sa afiseze fiecare propozitie pe o singura linie
+
+    public void sol7(){
+
+        String text = "Fie A un punct fix. Presupunem B punct mobil";
+        probleme.afisareLiniiNoi(text);
+
+
+    }
+
+
+    // 9) todo: Se considera o lista cu prenume ale elevilor dintr-o clasa. Prenumele unei fete este recunoscut datorita faptului ca fie are ultima litera 'a
+    // todo: fie este 'Carmen' sau 'Alice'. Sa s afizese nuamrul fetelor din clasa si cel mai mare prenume in sens lexicografic ale carui litere vor fi transformate in majuscule
+
+    public void sol8(){
+
+
+
+    }
+
+
+    // 10) todo: Se considera doua cuvinte mici, sa se verifice daca acestea rimeaza
+
+    public void sol9(){
+
+        String cuv1 = "armat";
+        String cuv2 = "verificat";
+
+        if (probleme.isRimeaza(cuv1, cuv2)){
+            System.out.println("Rimeaza");
+        }
+        else{
+            System.out.println("Nu rimeaza");
+        }
+
+    }
 
 
 
