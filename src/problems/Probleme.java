@@ -173,7 +173,21 @@ public class Probleme {
 
     }
 
+    public String sirNumere(String text){
 
+        StringBuilder nou = new StringBuilder();
+
+        for(int i =0; i < text.length()-1; i++){
+            if(Character.isDigit(text.charAt(i))){
+                nou.append(text.charAt(i));
+            }
+            if(text.charAt(i+1) == ' '){
+                nou.append(" ");
+            }
+
+        }
+        return nou.toString();
+    }
 
 
 

@@ -121,6 +121,49 @@ public class solutii {
 
     }
 
+    // 11) todo: De la tastatura se citeste un text codifficat dupa regula urmatoare: in fata fiecarui caracter este scris un numar ce reprezinta numarul de aparitii consecutive
+    // todo: al acestuia.Realizati un program care decodifica textul. Exemplu: '1G11o1L' se va afisa 'Goooooooooool' ????
+
+    public void sol10(){
+
+
+
+    }
+
+    // 12) todo: Realizati un program ce afiseza numerele ce apar in text, despartite prin cate un spatiu.
+
+    public void sol11(){
+
+        String text = "Ana are 7 mere si 223 de pere";
+        String rezultat = probleme.sirNumere(text);
+
+        System.out.println("Numerele din sir sunt: " +rezultat);
+
+
+    }
+
+
+    // 13) todo: Realizati un program care determia cea mai lunga secventa de cifre alaturate din sir ???
+    // exemplu: 'a23Bw001234mcv34' se va afisa '001234'
+
+    public void sol12(){
+
+
+
+    }
+
+
+    // 14) todo: Sa se faca o operatie Find-Replace, aceasta operatie inocuieste aparitiile din subsirul s1 cu un alt subsir s2.
+    // exemplu: 'are mere si pere' s1 = 're' si s2 = 'rare', se va afisa: 'arare merare si perare.'
+
+    public void sol13(){
+
+
+    }
+
+
+
+
 
 
 }

@@ -6,7 +6,7 @@ public class Main {
         Probleme probleme = new Probleme();
         solutii solutii = new solutii();
 
-        solutii.sol9();
+        solutii.sol11();
 
 
 
