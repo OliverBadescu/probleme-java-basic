@@ -146,7 +146,7 @@ public class Probleme {
             }
 
         } while (!sortat);
-        }
+    }
 
     public void afisareLiniiNoi(String text){
 
@@ -189,7 +189,86 @@ public class Probleme {
         return nou.toString();
     }
 
+    public int sumaValPare(int[][] matrice, int n, int m){
 
+        int s = 0;
+
+        for (int i =0 ; i < n;i++){
+            for (int j =0; j< m;j++ ){
+                if (matrice[i][j] % 2 == 0){
+                    s += matrice[i][j];
+                }
+
+            }
+        }
+        return s;
+    }
+
+    public boolean isPrim(int nr){
+
+        int ct = 0;
+
+        for (int i =1; i<= nr ;i++){
+            if ( nr % i == 0){
+                ct++;
+            }
+        }
+        if ( ct == 2){
+            return true;
+        }
+        return false;
+
+    }
+
+    public int contorPrimePeIndiciPare( int[][] matrice, int n , int m){
+
+        int ct = 0;
+
+        for (int i =0 ; i <n;i++){
+            for (int j =0; j< m; j++){
+                if ( i % 2 ==0 && isPrim(matrice[i][j])){
+                    ct++;
+                }
+            }
+        }
+        return ct;
+    }
+
+    public int calculSumaLinie(int[] linie) {
+        int suma = 0;
+        for (int element : linie) {
+            suma += element;
+        }
+        return suma;
+    }
+    public void sortareMatriceDupaSuma(int[][] matrice) {
+
+
+        for (int i = 0; i < matrice.length - 1; i++) {
+            for (int j = 0; j < matrice.length - i - 1; j++) {
+                int sumaLinieJ = calculSumaLinie(matrice[j]);
+                int sumaLinieJPlus1 = calculSumaLinie(matrice[j + 1]);
+
+
+                if (sumaLinieJ > sumaLinieJPlus1) {
+                    int[] temp = matrice[j];
+                    matrice[j] = matrice[j + 1];
+                    matrice[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    public void afisare(int [][] matrice){
+
+        for (int i = 0; i < matrice.length; i++) {
+            for (int j = 0; j < matrice[i].length; j++) {
+                System.out.print(matrice[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+    }
 
 }
 

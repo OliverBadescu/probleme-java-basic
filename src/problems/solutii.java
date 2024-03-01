@@ -162,8 +162,60 @@ public class solutii {
     }
 
 
+    // 15) todo: Se dă o matrice cu n linii şi m coloane şi elemente numere naturale. Determinați suma valorilor pare din matrice.
+
+    public void sol14(){
+
+        int[][] matrice = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+        int n = 3;
+        int m =3;
+
+        int rez = probleme.sumaValPare(matrice, n, m);
+
+        System.out.println("Suma valorilor pare este: " + rez);
+
+    }
+
+    // 16) todo: Se dă o matrice cu n linii și m coloane și elemente numere naturale. Să se determine câte dintre elementele situate pe linii cu indici pari sunt prime.
+
+    public void sol15(){
+
+        int[][] matrice = {
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+        };
+        int n = 3;
+        int m =3;
+
+        int rez = probleme.contorPrimePeIndiciPare(matrice, n ,m);
 
 
+        System.out.println("Sunt " +rez +" elemete");
+
+    }
 
 
+    // 17) todo: Se dă o matrice cu n linii şi m coloane şi elemente numere naturale. Să se ordoneze liniile matricei crescător după suma elementelor.
+
+    public void sol16(){
+
+        int[][] matrice = {
+                {9,9,9},
+                {9,5,6},
+                {1,1,1}
+        };
+
+        probleme.sortareMatriceDupaSuma(matrice);
+
+        System.out.println("Matricea dupa sortare este:");
+        probleme.afisare(matrice);
+
+    }
 }
+
+
