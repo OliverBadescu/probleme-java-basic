@@ -216,6 +216,30 @@ public class solutii {
         probleme.afisare(matrice);
 
     }
+
+
+    // 18) todo: Se dă o matrice cu m linii şi n coloane şi elemente numere naturale. Înlocuiţi cu valoarea minimă din matrice toate elementele de pe coloanele care conţin valoarea minimă.
+
+
+    public void sol17(){
+
+        int[][] matrice = {
+                {8, 3, 3, 7},
+                {2, 1, 6, 5},
+                {8, 7, 3, 1},
+                {9, 8, 7, 1}
+        };
+
+        probleme.inlocuireElementeMin(matrice);
+
+        System.out.println("Matircea este: ");
+        probleme.afisare(matrice);
+
+    }
+
+
+
+
 }
 
 

@@ -270,6 +270,54 @@ public class Probleme {
 
     }
 
+
+    public int minMatrice(int [][] matrice){
+
+        int min = 99;
+
+        for (int i =0; i < matrice.length; i++){
+            for (int j = 0; j < matrice[i].length; j++){
+                if (matrice[i][j] < min){
+                    min = matrice[i][j];
+                }
+            }
+        }
+        return min;
+    }
+
+    public int pozElemMin(int [][] matrice){
+
+        int min = minMatrice(matrice);
+        int imin = 0;
+
+        for (int i =0; i < matrice.length; i++){
+            for (int j = 0; j < matrice[i].length; j++){
+                if (matrice[i][j] == min){
+                    return j;
+                }
+            }
+        }
+        return -1;
+    }
+
+
+    public void inlocuireElementeMin(int [][] matrice){
+
+        int min = minMatrice(matrice);
+        int imin = pozElemMin(matrice);
+
+        for (int j =0; j < matrice[0].length; j++){
+            for (int i = 0; i < matrice.length; i++){
+                if (j == imin){
+                    matrice[i][j] = min;
+                }
+
+            }
+
+        }
+
+    }
 }
+
 
 
