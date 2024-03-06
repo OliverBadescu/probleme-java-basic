@@ -26,7 +26,6 @@ public class solutii {
 
         String cuvant = "Deosebit";
 
-        probleme.afisareFaraPrimUltim(cuvant);
 
 
     }
@@ -75,7 +74,7 @@ public class solutii {
     }
 
 
-    // 7) todo: Sa se determine cuvantul cel mai mic in ordine lexicografica obtinu prin concatenarea a doua dintre cuvintele citite ???
+    // 7) todo: Sa se determine cuvantul cel mai mic in ordine lexicografica obtinu prin concatenarea a doua dintre cuvintele citite
 
     public void sol6(){
 
@@ -122,7 +121,7 @@ public class solutii {
     }
 
     // 11) todo: De la tastatura se citeste un text codifficat dupa regula urmatoare: in fata fiecarui caracter este scris un numar ce reprezinta numarul de aparitii consecutive
-    // todo: al acestuia.Realizati un program care decodifica textul. Exemplu: '1G11o1L' se va afisa 'Goooooooooool' ????
+    // todo: al acestuia. Realizati un program care decodifica textul. Exemplu: '1G11o1L' se va afisa 'Goooooooooool' ????
 
     public void sol10(){
 
@@ -220,7 +219,6 @@ public class solutii {
 
     // 18) todo: Se dă o matrice cu m linii şi n coloane şi elemente numere naturale. Înlocuiţi cu valoarea minimă din matrice toate elementele de pe coloanele care conţin valoarea minimă.
 
-
     public void sol17(){
 
         int[][] matrice = {
@@ -236,6 +234,7 @@ public class solutii {
         probleme.afisare(matrice);
 
     }
+
 
 
 

@@ -4,9 +4,9 @@ public class Main {
     public static void main(String[] args) {
 
         Probleme probleme = new Probleme();
-        solutii solutii = new solutii();
+        tema tema = new tema();
 
-        solutii.sol17();
+        tema.sol6();
 
 
 
