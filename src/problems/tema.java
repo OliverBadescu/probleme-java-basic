@@ -76,4 +76,44 @@ public class tema {
 
     }
 
+
+    // 7) todo: Să se afişeze şirul obţinut prin eliminarea din șir a fiecărei vocale.
+
+    public void sol7(){
+
+        String cuv = "romancier";
+        String rez = probleme.eliminareVocale(cuv);
+
+        System.out.println(rez);
+
+    }
+
+
+    // 8) todo: Determinați numărul de perechi de vocale consecutive din propoziție.
+
+    public void sol8(){
+
+        String text = "aceasta familie are doua case";
+        int rez = probleme.contorPerechiVocale(text);
+
+        System.out.println(rez);
+
+    }
+
+
+    // 9) todo: Să se scrie un program care citeşte de la tastatură un numele și prenumele unei persoane și construiește un al treilea șir de caractere, care va conține consoanele
+    //  todo: din prenumele citit dispuse în ordinea în care apar în prenume, urmate de exact un spațiu și de numele citit.
+
+    public void sol9(){
+
+        String nume= "Popescu";
+        String prenume = "Vasile";
+
+        String nou = probleme.doarConsoane(prenume);
+
+        System.out.println(nou + nume);
+
+    }
+
+
 }

@@ -559,8 +559,7 @@ public class Probleme {
         return nou;
     }
 
-    public Boolean isPalindrom(String cuv)
-    {
+    public Boolean isPalindrom(String cuv) {
 
         for (int i =0, j = cuv.length()-1; i < j; i++, j--){
 
@@ -572,6 +571,46 @@ public class Probleme {
         return true;
     }
 
+
+    public String eliminareVocale(String cuv){
+
+        String nou = "";
+
+        for (int i = 0; i < cuv.length();i++){
+            if (!isVocala(cuv.charAt(i))){
+                nou += cuv.charAt(i);
+            }
+
+        }
+        return nou;
+    }
+
+    public int contorPerechiVocale(String text){
+
+        int ct =0;
+
+        for (int i =0 ; i < text.length()-1; i++){
+
+            if(isVocala(text.charAt(i)) && isVocala(text.charAt(i+1))){
+                ct++;
+            }
+
+        }
+        return ct;
+    }
+
+    public String doarConsoane(String text){
+
+        String nou = "";
+
+        for (int i =0; i <text.length();i++){
+            if (!isVocala(text.charAt(i))){
+                nou += text.charAt(i);
+            }
+        }
+        nou += ' ';
+        return nou;
+    }
 
 }
 

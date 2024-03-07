@@ -6,7 +6,7 @@ public class Main {
         Probleme probleme = new Probleme();
         tema tema = new tema();
 
-        tema.sol6();
+        tema.sol9();
 
 
 
