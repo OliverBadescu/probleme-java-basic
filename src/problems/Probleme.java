@@ -256,7 +256,6 @@ public class Probleme {
 
     }
 
-
     public int minMatrice(int[][] matrice) {
 
         int min = 99;
@@ -475,9 +474,41 @@ public class Probleme {
 
     }
 
+    public int[] frecventaCifre(String text) {
+
+
+        int[] frecventa = new int[256];
+
+
+        for (int i = 0; i < text.length(); i++) {
+            if(Character.isDigit(text.charAt(i))) {
+                frecventa[text.charAt(i)]++;
+            }
+        }
+        return frecventa;
+
+
+    }
+
     public int frecventaMax(String text){
 
         int[]frecventa = frecventaLitere(text);
+        int max = 0;
+
+        for (int i = 0; i < frecventa.length; i++){
+
+            if (frecventa[i] > max){
+                max = frecventa[i];
+            }
+
+        }
+
+        return max;
+    }
+
+    public int frecventaMaxCifre(String text){
+
+        int[]frecventa = frecventaCifre(text);
         int max = 0;
 
         for (int i = 0; i < frecventa.length; i++){
@@ -571,7 +602,6 @@ public class Probleme {
         return true;
     }
 
-
     public String eliminareVocale(String cuv){
 
         String nou = "";
@@ -611,6 +641,57 @@ public class Probleme {
         nou += ' ';
         return nou;
     }
+
+    public Boolean isdoarVocale(String cuvant){
+
+        for (int i =0 ;i < cuvant.length(); i++){
+            if (!isVocala(cuvant.charAt(i))){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public int contorCuvVocale(String[] text){
+        int ct = 0;
+
+        for (int i = 0;i < text.length; i ++){
+            if (isdoarVocale(text[i])){
+                ct++;
+            }
+        }
+        return ct;
+    }
+
+    public Boolean isPar(int n){
+        return n % 2 == 0;
+    }
+
+    public String ceaMaiLungaSecventaConsoane(String sir) {
+        String ceaMaiLungaSecventa = "";
+        String secventaCurenta = "";
+
+        for (int i = 0; i < sir.length(); i++) {
+            char caracter = sir.charAt(i);
+
+            if (!isVocala(caracter)) {
+                secventaCurenta += caracter;
+            } else {
+                if (secventaCurenta.length() > ceaMaiLungaSecventa.length()) {
+                    ceaMaiLungaSecventa = secventaCurenta;
+                }
+                secventaCurenta = "";
+            }
+        }
+
+
+        if (secventaCurenta.length() > ceaMaiLungaSecventa.length()) {
+            ceaMaiLungaSecventa = secventaCurenta;
+        }
+
+        return ceaMaiLungaSecventa;
+    }
+
 
 }
 

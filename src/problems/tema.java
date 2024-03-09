@@ -115,5 +115,84 @@ public class tema {
 
     }
 
+    // 10) todo: Să se scrie un program care citește un șir de caractere și afișează litera mică cel mai des întâlnită în șir.
 
+    public void sol10(){
+
+        String text= "In 12 mergem la munte";
+
+        System.out.println(probleme.frecventaMax(text));
+
+    }
+
+
+    // 11) todo: Scrieţi un program care citeşte de la tastatură un şir de cel mult 60 de caractere (litere mici şi mari ale alfabetului englez, cifre, puncte, virgule şi spaţii)
+    //  todo: şi afişează pe ecran cifra care apare de cele mai multe ori în şirul citit.
+
+    public void sol11(){
+
+        String text = "Voi lua 9,5 la matematica 10 la informatica si 10 la romana ";
+
+        System.out.println(probleme.frecventaMaxCifre(text));
+    }
+
+
+    // 12) todo: Să se determine numărul cuvintelor care conțin doar vocale.
+
+    public void sol12(){
+
+        String[] text = { "creion",
+                "lemn",
+                "ou",
+                "ea",
+                "voce"};
+
+        System.out.println(probleme.contorCuvVocale(text));
+
+    }
+
+    // 13) todo: Se citeste un sir de caractere (care poate contine si spatii). Să se determine caracterul mediu al caracterelor bune din sir ???
+
+    void sol13(){
+
+
+
+    }
+
+
+    // 14) todo: Se dă un număr natural n. Să se determine paritatea lui. Dacă numărul este par se afișează Par, altfel se afișează Impar.
+
+    void sol14(){
+
+        int n = 5;
+
+        if (probleme.isPar(n)){
+            System.out.println("Par");
+        }else{
+            System.out.println("Impar");
+        }
+
+
+    }
+
+
+    // 15) todo: Să se afișeze cuvintele pe ecran, fiecare cuvânt pe câte o linie, în ordinea descrescătoare a numărului de litere. ???
+
+    void sol15(){
+
+        String text = "ana are mere";
+
+    }
+
+
+    // 16) todo: Se citește un șir format din cel mult 255 caractere, litere mici ale alfabetului englez. Să se determine ce mai lungă secvență din șir formată numai din consoane.
+
+    void sol16(){
+
+        String text= "ukdiaehldjasmfx";
+
+        System.out.println(probleme.ceaMaiLungaSecventaConsoane(text));
+
+    }
 }
+
